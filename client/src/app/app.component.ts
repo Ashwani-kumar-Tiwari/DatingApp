@@ -9,7 +9,7 @@ import { HomeComponent } from "./home/home.component";
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [NavComponent, HomeComponent]
+  imports: [RouterOutlet , NavComponent, HomeComponent]
 })
 export class AppComponent implements OnInit {
   private accountService = inject(AccountService);
