@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
 
-public class BUggyController(DataContext context): BaseApiController
+public class BuggyController(DataContext context): BaseApiController
 {
     [Authorize]
     [HttpGet("auth")]
