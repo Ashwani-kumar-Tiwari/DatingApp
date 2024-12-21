@@ -19,7 +19,7 @@ export class NavComponent {
   private toastr = inject(ToastrService)
   model: any = {};
 
-  login () {
+  login() {
     this.accountService.login(this.model).subscribe({
       next: _ => {
         this.router.navigateByUrl('/members')

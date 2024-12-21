@@ -8,14 +8,14 @@ import { RegisterComponent } from "../register/register.component";
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent{
+export class HomeComponent {
   registerMode = false;
 
   registerToggle() {
     this.registerMode = !this.registerMode
   }
 
-  cancelRegisterMode(event: boolean){
+  cancelRegisterMode(event: boolean) {
     this.registerMode = event;
   }
 }
