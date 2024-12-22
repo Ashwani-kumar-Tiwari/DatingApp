@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-4">
             <div class="card">
-                <img src="{{member.photoUrl || './assets/user.png'}}" alt="{{member.knownAs}}" class="card-img img-thumbnail">
+                <img src="{{member.photoUrl || '../assets/user.png'}}" alt="{{member.knownAs}}" class="card-img img-thumbnail">
                 <div class="card-body">
                     <div>
                         <strong>Location: </strong>
@@ -47,6 +47,8 @@
                         <gallery
                             [items]="images" 
                             class="gallery"
+                            [itemAutosize]="true"
+                            thumbs thumbPosition="bottom"
                         ></gallery>
                     }
                 </tab>
